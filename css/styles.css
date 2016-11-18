@@ -22,12 +22,22 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: "Comic Sans MS";
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+/*
+@font-face {
+    font-family: "Coca Cola ii";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150%;
+    src: local("?"), url("../fonts/cocacola/cocacolaii.woff") format("woff"), url("../fonts/cocacola/cocacolaii.ttf") format("truetype");
+}
+*/
 body {
     line-height: 1;
 }
@@ -46,16 +56,23 @@ table {
     border-spacing: 0;
 }
 *{
-    font-size: 16pt;
-    font-family: SansSerif;
+    font-size: 12pt;
+    font-family: "Comic Sans MS";
+
+
 }
 h1,h2,h4, h5{
-    font-family: Arial, Verdana;
+    font-weight: bold;
+    font-style: italic;
+
+
 }
 h1{
-    margin: 40px;
-    font-size: 250%;
+    margin: 40px auto;
+    font-size: 750%;
     text-align: center;
+    font-family: "Comic Sans MS";
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
 }
 h2{
     font-size: 120%;
@@ -65,23 +82,38 @@ h3{
 }
 nav{
     position: fixed;
+    margin: 0 auto;
     top: 0;
     left: 0;
-    height: 30px;
+    height: 38px;
     width: 100%;
 }
 #wrapper{
     position: relative;
-    top:30px;
+    top:38px;
 }
+
 /* colorzilla */
-nav ul {
+nav  {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
     background: #1e5799; /* Old browsers */
     background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0); /* IE6-9 */
+    width: 100%;
+}
+nav ul li{
+    padding: 10px 30px;
+    float: left;
+    border-color:blue;
+    border-width:1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+nav ul li:hover a{
+    color: #050018;
 }
 
 body{
@@ -93,13 +125,69 @@ body{
     margin: 0 auto;
 }
 ul{
-
-    background-color: blue;
+    width: 800px;
+    margin: 0 auto;
 }
-ul li{
+p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 15px;
+    text-align: justify;
+}
+#presentacion{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+
+}
+#productos{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+
+}
+#acerca_de{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+
+    text-decoration-color: floralwhite;
+}
+#localización{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+
+}
+#contacto {
+    background-color:pink;
+    font-family: "Franklin Gothic Book";
+    text-decoration-color: floralwhite;
+}
+img {
+    width: 220px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    padding-toptop: 5px;
+    padding-bottom: 35px;
+}
+.left {
     float: left;
-    min-width:100px;
-    height: 20px;
+    width: 50%;
+}
+.right{
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 /*
 ul:last-child{
