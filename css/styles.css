@@ -136,40 +136,38 @@ p{
     text-align: justify;
 }
 #presentacion{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
-    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to left, #D00C15, #F1BCBF); /*Standard*/
 
 }
 #productos{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to right, #D00C15, #F1BCBF); /*Standard*/
 
 }
 #acerca_de{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
-
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #D00C15, #F1BCBF); /*Standard*/
     text-decoration-color: floralwhite;
 }
 #localización{
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(bottom,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
-    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
-
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #D00C15, #F1BCBF); /*Standard*/
 }
 #contacto {
-    background-color:pink;
+    background-color:#DB7777;
     font-family: "Franklin Gothic Book";
     text-decoration-color: floralwhite;
 }
