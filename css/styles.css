@@ -188,7 +188,7 @@ footer li a{
     background: linear-gradient(to top, #D00C15, #F1BCBF); /*Standard*/
     text-decoration-color: floralwhite;
 }
-#localización{
+#localizacion{
     background: #D00C15; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(bottom,#D00C15,#F1BCBF); /*Safari 5.1-6*/
     background: -o-linear-gradient(bottom,#D00C15,#F1BCBF); /*Opera 11.1-12*/
