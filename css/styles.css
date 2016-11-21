@@ -102,19 +102,19 @@ nav  {
     background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0); /* IE6-9 */
-    width: 100%;
+    width: 55%;
 }
 nav ul li{
     padding: 10px 30px;
     float: left;
-    border-color:blue;
+    border-color:white;
     border-width:1px;
     border-style: solid;
     border-radius: 10px;
     margin: 0 auto;
 }
 nav ul li:hover a{
-    color: #050018;
+    color: white;
 }
 
 body{
@@ -126,7 +126,7 @@ body{
     margin: 0 auto;
 }
 ul{
-    width: 800px;
+    width: 711px;
     margin: 0 auto;
 }
 p{
@@ -143,6 +143,35 @@ p{
     background: linear-gradient(to left, #D00C15, #F1BCBF); /*Standard*/
 
 }
+footer li{
+    float:right;
+}
+footer li a{
+    background: url("../images/rrss.png") ;
+    width: 70px;
+    height: 70px;
+    display:block;
+    margin-right: 3em;
+}
+.facebook{
+     background-position:0 160px;
+ }
+.twiter{
+    background-position:247px 160px;
+}
+.linkedn{
+    background-position:580px 160px;
+}
+.facebook:hover{
+    background-position:0 0px;
+}
+.twiter:hover{
+    background-position:247px 0px;
+}
+.linkedn:hover{
+    background-position:580px 0px;
+}
+
 #productos{
     background: #D00C15; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(right,#D00C15,#F1BCBF); /*Safari 5.1-6*/
