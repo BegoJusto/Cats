@@ -141,35 +141,6 @@ p{
     background: -o-linear-gradient(left,#D00C15,#F1BCBF); /*Opera 11.1-12*/
     background: -moz-linear-gradient(left,#D00C15,#F1BCBF); /*Fx 3.6-15*/
     background: linear-gradient(to left, #D00C15, #F1BCBF); /*Standard*/
-
-}
-footer li{
-    float:right;
-}
-footer li a{
-    background: url("../images/rrss.png") ;
-    width: 70px;
-    height: 70px;
-    display:block;
-    margin-right: 3em;
-}
-.facebook{
-     background-position:0 160px;
- }
-.twiter{
-    background-position:247px 160px;
-}
-.linkedn{
-    background-position:580px 160px;
-}
-.facebook:hover{
-    background-position:0 0px;
-}
-.twiter:hover{
-    background-position:247px 0px;
-}
-.linkedn:hover{
-    background-position:580px 0px;
 }
 
 #productos{
@@ -200,13 +171,29 @@ footer li a{
     font-family: "Franklin Gothic Book";
     text-decoration-color: floralwhite;
 }
+#imagen1{
+    margin: 0 70px;
+}
+#imagen2{
+    margin: 0 270px;
+}
+#imagen3{
+    margin: 0 auto;
+}
+#imagen4{
+    margin: 0 620px;
+}
+#imagen5{
+    margin: 0 750px;
+}
+
 img {
     width: 220px;
     height: 250px;
     display: block;
-    margin: 0 auto;
     padding-toptop: 5px;
     padding-bottom: 35px;
+
 }
 .left {
     float: left;
@@ -217,6 +204,35 @@ img {
     width: 50%;
     text-align: right;
 }
+footer li{
+    float:right;
+}
+footer li a{
+    background: url("../images/rrss.png") ;
+    width: 70px;
+    height: 70px;
+    display:block;
+    margin-right: 3em;
+}
+.facebook{
+    background-position:0 160px;
+}
+.twiter{
+    background-position:247px 160px;
+}
+.linkedn{
+    background-position:580px 160px;
+}
+.facebook:hover{
+    background-position:0 0px;
+}
+.twiter:hover{
+    background-position:247px 0px;
+}
+.linkedn:hover{
+    background-position:580px 0px;
+}
+
 /*
 ul:last-child{
     float:none !important;
