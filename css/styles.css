@@ -56,79 +56,80 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-@-moz-keyframes slider {
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+@-moz-keyframes slider { /*FF 13 -16 */
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
 @-webkit-keyframes slider {
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
 @-ms-keyframes slider {
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
 @-khtml-keyframes slider {
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
 @-o-keyframes slider {
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
-@keyframes slider {/*W3C Standard*/
-    0%   {left: 0%;}
-    20%  {left: 0%}
-    25%  {left: -100%;}
-    45%  {left: -100%;}
-    50%  {left: -200%;}
-    70%  {left: -200%;}
-    75%  {left: -300%;}
-    95%  {left: -300%;}
-    100% {left: -400%;}
+@keyframes slider { /* W3C starndard*/
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
 }
 div#slider figure img{
     width: calc(100%/5);
+    float: left;
 }
 div#slider figure{
     position: relative;
-    width: 500%;
-    margin: 0;
+    width: 500%;/*500vw;*/
+    margin: 0 auto;
     left: 0;
     animation: 30s slider infinite;
 }
@@ -194,7 +195,8 @@ nav ul li:hover a{
 }
 
 body{
-    max-width: 1024px;
+    position: relative;
+    width: 100%;
     margin: 0 auto;
 }
 #wrapper > header{
@@ -266,7 +268,7 @@ p{
 img {
     width: 220px;
     height: 250px;
-    display: block;
+/*    display: block;*/
     padding-toptop: 5px;
     padding-bottom: 35px;
 
