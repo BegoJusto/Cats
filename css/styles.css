@@ -41,6 +41,13 @@ footer, header, hgroup, menu, nav, section {
 */
 body {
     line-height: 1;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
 }
 ol, ul {
     list-style: none;
@@ -120,10 +127,13 @@ table {
     70%{ left: -200%;}
     75%{ left: -300%;}
     95%{ left: -300%;}
-    100%{ left: -400%;}
+    100%{left: -400%;}
 }
+div#slider {
+    overflow-x: hidden; }
 div#slider figure img{
     width: calc(100%/5);
+    height: 5%;
     float: left;
 }
 div#slider figure{
@@ -194,11 +204,7 @@ nav ul li:hover a{
     color: white;
 }
 
-body{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
+
 #wrapper > header{
     width: 100%;
     margin: 0 auto;
