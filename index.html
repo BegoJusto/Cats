@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
 	<!--favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -43,6 +43,8 @@
 				<li><a href="#contacto">Contacto</a></li>
 			</ul>
 		</nav>
+
+		<!--SLIDER-->
 		<div id="slider" role="slider">
 			<!--
 			rel="follow" --
@@ -51,7 +53,6 @@
 			<figure>
 				<a href="favicon-32x32.png" role="no-follow" target="_blank" download>
 					<img srcset="images/slider1.jpg">
-				</a>
 				</a>
 				<a href="#" target="_blank" role="no-follow" target="_blank" download>
 					<img srcset="images/slider2.jpg">
@@ -65,8 +66,12 @@
 				<a href="favicon-32x32.png" role="no-follow" target="_blank" download>
 					<img srcset="images/slider5.jpg">
 				</a>
+
 			</figure>
+
 		</div>
+		<!--FIN SLIDER-->
+
 		<!--ANIMACIÓN-->
 		<div id="svg">
 			<svg width="1200" height="570">
@@ -79,11 +84,10 @@
 							 M640,110 c65,-200 10,10 500,0 "
 					  fill="none" stroke="blue" stroke-width="4"/>
 				<ellipse cx="15" cy="-18" rx="65" ry="35" fill="pink" stroke="red" stroke-width="3">
-
 					<animateMotion dur="16s" rotate="auto" repeatCount="indefinite"> <mpath xlink:href="#ruta1" /></animateMotion>
 				</ellipse>
 				<a xlink:href="#acerca_de">
-					<text x="-20" y="-20">Ven a
+					<text x="-3" y="-20">Ven a
 						<animateMotion dur="16s" rotate="auto" repeatCount="indefinite"> <mpath xlink:href="#ruta1" /></animateMotion>
 					</text>
 					<text x="-20" y="-10">conocernos
@@ -96,10 +100,9 @@
 
 		<!--FIN ANIMACIÓN-->
 		<main class="clearfix">
-			<hr>
-			<section id="presentacion" class="clearfix">
+			<section id="presentacion" class=" flexcontainer clearfix">
 				<header><h2>Presentación</h2></header>
-                <div class="row">
+
                     <div class="seccion1">
                         <hr>
                         <p>
@@ -129,50 +132,91 @@
                     <div class="seccion2">
 						<img id="imagen1" src="images/1.jpg">
 					</div>
-                </div>
 			</section>
-			<hr>
 
-			<section id="productos">
+
+			<section id="productos" class="flexcontainer">
 				<header><h2>Productos</h2></header>
-                <div class="row">
-				<div class="seccion1">
-					<hr>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-						Aenean commodo ligula eget dolor. Aenean massa.
-						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-						Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-						Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-						In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-						Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-						Cras dapibus.
-						Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-						Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-						Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-						Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-						Aenean imperdiet. Etiam ultricies nisi vel augue.
-						Curabitur ullamcorper ultricies nisi. Nam eget dui.
-						Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-						Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-						Maecenas nec odio et ante tincidunt tempus.
-						Donec vitae sapien ut libero venenatis faucibus.
-						Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-						Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-						Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-					</p>
-                </div>
-                    <div class="seccion2">
-						<img id="imagen2"src="images/2.jpg">
+						<section class="flexcontainer">
+							<h3>Lolo</h3>
+							<div>
+								<a href="#" ><img src="images/Adopta%201.jpg"></a>
+								<p>
+									Edad: 01/01/12.</br>
+									Sexo: Macho.</br>
+									Carácter: Bueno y juguetón
+								</p>
+								<a href="#">Adoptar</a>
+							</div>
 
+						</section>
+
+				<section class="flexcontainer">
+					<h3>Lolo</h3>
+					<div>
+						<a href="#" ><img src="images/Adopta%202.jpg" alt="" height="140" width="94"></a>
+						<p>Edad: 01/01/12.</br>
+							Sexo: Macho.</br>
+							Carácter: Bueno y juguetón
+						</p>
 					</div>
-				</div>
+					<a href="#">Adoptar</a>
+				</section>
+
+				<section class="flexcontainer">
+					<h3>Lolo</h3>
+					<div>
+						<a href="#" ><img src="images/Adopta%203.jpg" alt="" height="140" width="94"></a>
+						<p>Edad: 01/01/12.</br>
+							Sexo: Macho.</br>
+							Carácter: Bueno y juguetón
+						</p>
+					</div>
+					<a href="#">Adoptar</a>
+				</section>
+
+				<section class="flexcontainer">
+					<h3>Lolo</h3>
+					<div>
+						<a href="#" ><img src="images/Adopta%204.jpg" alt="" height="140" width="94"></a>
+						<p>Edad: 01/01/12.</br>
+							Sexo: Macho.</br>
+							Carácter: Bueno y juguetón
+						</p>
+					</div>
+					<a href="#">Adoptar</a>
+				</section>
+
+				<section class="flexcontainer">
+					<h3>Lolo</h3>
+					<div>
+						<a href="#" ><img src="images/Adopta%205.jpg" alt="" height="140" width="94"></a>
+						<p>Edad: 01/01/12.</br>
+							Sexo: Macho.</br>
+							Carácter: Bueno y juguetón
+						</p>
+					</div>
+					<a href="#">Adoptar</a>
+				</section>
+
+				<section class="flexcontainer">
+					<h3>Lolo</h3>
+					<div>
+						<a href="#" ><img src="images/Adopta%206.jpg" alt="" height="140" width="94"></a>
+						<p>Edad: 01/01/12.</br>
+							Sexo: Macho.</br>
+							Carácter: Bueno y juguetón
+						</p>
+					</div>
+					<a href="#">Adoptar</a>
+				</section>
+
 			</section>
 
 			<hr>
-			<section id="acerca_de">
+			<section id="acerca_de" class="flexcontainer">
 				<header><h2>Acerca de</h2></header>
-                <div class="row">
+
 				<div class="seccion1">
 					<hr>
 					<p>
@@ -198,18 +242,16 @@
 						Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
 						Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
 					</p>
-                    <div class="seccion2">
-						<img id="imagen3" src="images/3.jpg">
-                    </div>
-					</div>
+						<div class="seccion2">
+							<img id="imagen3" src="images/3.jpg">
+						</div>
 				</div>
 			</section>
-			<hr>
 
-					<section id="localizacion">
-						<header><h2>Localización</h2></header>
-                    <div class="row">
-					<div class="seccion1">
+			<section id="localizacion" class="flexcontainer">
+				<header><h2>Localización</h2></header>
+
+				<div class="seccion1">
 
 					 <hr>
 					 <p>
