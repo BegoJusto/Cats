@@ -184,12 +184,36 @@ h2{
 h3{
     font-size: 110%;
 }
+section > header {
+    font-style: italic;
+    font-weight: bolder;
+}
 .flexcontainer{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
+    margin: 30px;
+}
+
+.flex-item {
+    width: 350px;
+    height: 150px;
+    align-items: center;
+}
+.formulario-flex{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-field{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div > a > img {
+    width: 94px;
+    height: 140px;
 }
 nav{
     position: fixed;
@@ -236,17 +260,11 @@ nav ul li:hover a{
 section{
     flex-wrap: wrap;
 }
-p{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 15px;
-    text-align: justify;
-}
+
 section section{
-
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-end;
-
 }
 section header{
     width: 100%;
@@ -255,54 +273,12 @@ section h3{
     width: 100%;
 }
 section div{
-    display:flex;
-    width:100%;
+    display: flex;
+    /*width: 100%;*/
     flex-wrap: nowrap;
 }
 section > a > p{
 }
-/*PRODUCTOS*/
-/*
-.columna1,
-.columna2,
-.columna3,
-.columna4,
-.columna5,
-.columna6 {
-    width: 33%;
-}
-
-@media (min-width: 300px) {
-    .columna1,
-    .columna2,
-    .columna3,
-    .columna4,
-    .columna5,
-    .columna6 {
-        width: 50%;
-    }
-}
-
-@media (min-width: 800px) {
-    .columna1,
-    .columna2,
-    .columna3,
-    .columna4,
-    .columna5,
-    .columna6 {
-        width: 33.3%;
-    }
-
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-div > section > h3 {
-    font-size: 3em;
-    color: #1e5799;
-}
-/* FIN PRODUCTOS*/
 
 
 #presentacion{
