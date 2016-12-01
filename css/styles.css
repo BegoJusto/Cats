@@ -149,6 +149,11 @@ div#slider figure{
     left: 0;
     animation: 30s slider infinite;
 }
+ figure > a > img {
+    width:1000px;
+    height:362px;
+     border-radius: 8px;
+}
 
 *{
     font-size: 12pt;
@@ -206,16 +211,80 @@ section > header {
     flex-direction: column;
     justify-content: space-between;
 }
-.form-field{
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+.form-field {
+    flex-direction: row;
 }
+fieldset {
+    margin: 20px;
+    padding: 20px;
+}
+form > article{
+    flex-direction: row;
+}
+article > fieldset > label , input, textarea {
+    margin: 10px;
+    border-radius: 8px;
+}
+#comentario{
+    m
+}
+button {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+
+}
+/*BUSCADOR*/
+#formBuscador{
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+#buscador{
+    border: none;
+    background: #EEE;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+    max-width: 250px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 12px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botonBuscador{
+    position: absolute;
+    height: 100%;
+    padding-right: 5px;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+botonBuscador:before{
+    content: "\1F50D";
+    color: #0094FF;
+    font-size: 1.1em;
+}
+/*FIN BUSCADOR*/
+
+
 div > a > img {
     width: 94px;
     height: 140px;
 }
+
 nav{
+    display: flex;
     position: fixed;
     margin: 0 auto;
     top: 0;
@@ -223,21 +292,16 @@ nav{
     height: 38px;
     width: 100%;
     z-index: 1;
-}
-#wrapper{
-    position: relative;
-    top:38px;
-}
-
-/* colorzilla */
-nav  {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
     background: #1e5799; /* Old browsers */
     background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0); /* IE6-9 */
-    width: 55%;
+}
+#wrapper{
+    position: relative;
+    top:38px;
 }
 nav ul li{
     padding: 10px 30px;

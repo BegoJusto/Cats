@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Comic Sans MS";
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*SVG*/
+#svg {
+    margin: 50px auto 0 auto;
+    align-items: center;
+
+}
+svg > a > text {
+    text-align: center;
+}
+
+/**/
+body {
+    line-height: 1;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    padding: 0 15px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@-moz-keyframes slider { /*FF 13 -16 */
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-webkit-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-ms-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-khtml-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@-o-keyframes slider {
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{ left: -400%;}
+}
+@keyframes slider { /* W3C starndard*/
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+    95%{ left: -300%;}
+    100%{left: -400%;}
+}
+div#slider {
+    overflow-x: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div#slider figure img{
+    width: calc(100%/5);
+    float: left;
+    margin-bottom: 0;
+    z-index: 0;
+}
+div#slider figure{
+    position: relative;
+    width: 500%;/*500vw;*/
+    margin: 0 auto;
+    left: 0;
+    animation: 30s slider infinite;
+}
+figure > a > img {
+    width:1000px;
+    height:362px ;
+}
+
+*{
+    font-size: 12pt;
+    font-family: "Comic Sans MS";
+
+
+}
+h1,h2,h4, h5{
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+h1{
+    margin: 40px auto;
+    font-size: 750%;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+h1.elegantshadow {
+    color: #131313;
+    background-color: #e7e5e4;
+    letter-spacing: .15em;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
+}
+h2{
+    font-size: 120%;
+}
+h3{
+    font-size: 110%;
+}
+section > header {
+    font-style: italic;
+    font-weight: bolder;
+}
+.flexcontainer{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px;
+}
+
+.flex-item {
+    width: 350px;
+    height: 150px;
+    align-items: center;
+}
+.formulario-flex{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+fieldset{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*BUSCADOR*/
+#formBuscador{
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+#buscador{
+    border: none;
+    background: #EEE;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+    max-width: 250px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 12px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botonBuscador{
+    position: absolute;
+    height: 100%;
+    padding-right: 5px;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+botonBuscador:before{
+    content: "\1F50D";
+    color: #0094FF;
+    font-size: 1.1em;
+}
+/*FIN BUSCADOR*/
+
+
+div > a > img {
+    width: 94px;
+    height: 140px;
+}
+nav{
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    height: 38px;
+    width: 100%;
+    z-index: 1;
+}
+#wrapper{
+    position: relative;
+    top:38px;
+}
+
+/* colorzilla */
+nav  {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0); /* IE6-9 */
+    width: 55%;
+}
+nav ul li{
+    padding: 10px 30px;
+    float: left;
+    border-color:white;
+    border-width:1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+nav ul li:hover a{
+    color: white;
+}
+
+
+#wrapper > header{
+    /*  width: 100%;*/
+
+}
+section{
+    flex-wrap: wrap;
+}
+
+section section{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+section header{
+    width: 100%;
+}
+section h3{
+    width: 100%;
+}
+section div{
+    display: flex;
+    /*width: 100%;*/
+    flex-wrap: nowrap;
+}
+section > a > p{
+}
+
+
+#presentacion{
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to left, #D00C15, #F1BCBF); /*Standard*/
+}
+
+#productos{
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to right, #D00C15, #F1BCBF); /*Standard*/
+
+}
+#acerca_de{
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #D00C15, #F1BCBF); /*Standard*/
+    text-decoration-color: floralwhite;
+}
+#localizacion{
+    background: #D00C15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom,#D00C15,#F1BCBF); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom,#D00C15,#F1BCBF); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom,#D00C15,#F1BCBF); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #D00C15, #F1BCBF); /*Standard*/
+}
+#contacto {
+    background-color:#DB7777;
+    font-family: "Franklin Gothic Book";
+    text-decoration-color: floralwhite;
+}
+#imagen1,#imagen2,#imagen3,#imagen4,#imagen5{
+    margin: 1em 0 1em 4em;
+    width: 220px;
+    height: 250px;
+
+    padding-toptop: 5px;
+    padding-bottom: 35px;
+}
+#svg{
+    display:none;
+}
+#imagensvc{
+    width: 5px;
+    height: 5px;
+}
+
+.facebook{
+    background-position:0 160px;
+}
+.twiter{
+    background-position:247px 160px;
+}
+.linkedn{
+    background-position:580px 160px;
+}
+.facebook:hover{
+    background-position:0 0px;
+}
+.twiter:hover{
+    background-position:247px 0px;
+}
+.linkedn:hover{
+    background-position:580px 0px;
+}
+
+.clearfix:before, .clearfix:after {content:"";display:table; }
+.clearfix:after{clear:both}
