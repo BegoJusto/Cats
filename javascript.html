@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+    <meta name="author" content="Bego Justo">
+    <meta name="description" content="Primera página Web">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
     <title>Title</title>
 </head>
 <body>
-<table>
-    <thead>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<div id="container">
+    <header>
+        <h1 class="elegantshadow">Gatit@s</h1>
+    </header>
+    <nav>
+        <ul role="menu" class="clearfix">
+            <li><a href="#alumnos">Alumnos</a></li>
+        </ul>
+    </nav>
+    <main class="clearfix">
+        <section id="presentacion" class=" flexcontainer clearfix">
+            <header><h2>Presentación</h2></header>
+
+            <div class="seccion1">
+            <button>Borrar</button>
+                <button>Añadir</button>
+                <button>Borrar</button>
+                <table id="alumnos">
+                    <thead title="Alumnos registrados">
+                    <th>checkbox</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Unidad Formativa</th>
+                    <th>Nota de UF</th>
+                    <th>Nota Media</th>
+                    <th><button>Editar</button></th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <td>Nota media de la clase</td>
+                        <td>Total de alumnos</td>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
 
 
 </body>
